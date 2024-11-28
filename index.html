@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Formats</title>
+</head>
+<body>
+    <script>
+        console.log("Task-1 convert to uppercase")
+        let a=prompt("enter lowercase text")
+        console.log(a.toUpperCase())
+
+        console.log("Task-2 convert to lowercase")
+        let b=prompt("enter Uppercase text")
+        console.log(b.toLowerCase())
+
+        console.log("Task-3 Reverse a string");
+        let c=prompt("enter ur text to reverse a string")
+        console.log(c)
+        console.log(c.split("").reverse().join(""))
+
+        console.log("Task-4 Username Validation")
+        let d=prompt("enter the username")
+        if(d.length>5&&d.length<=15){
+            console.log("valid username " +d.length)
+        }
+        else{
+            console.log("not valid username " +"length= " +d.length )
+        }
+
+        console.log("Task-5 Email formatter")
+        let e=prompt("enter first name")
+        let f=prompt("enter last name")        
+        console.log(e+"."+f+"@gmail.com")
+
+        console.log("Task-6 Word count");
+        let stmnt=prompt("enter your statement")
+        console.log(stmnt.split(" ").length,stmnt)
+
+        console.log("Task-7 Palindrome checker")
+        let str=prompt("enter text to check palindrome")
+        let str1=str.split('').reverse().join('')
+        console.log(str1)
+        if(str==str1){
+            console.log("its palindrome")
+        }
+        else{
+            console.log("not a palindrome"); 
+        }
+
+    
+
+        
+    </script>
+</body>
+</html>
